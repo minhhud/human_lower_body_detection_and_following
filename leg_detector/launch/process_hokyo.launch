@@ -1,0 +1,20 @@
+<launch>
+  <node pkg="tf" type="static_transform_publisher" name="camera_link" args="0 0 -0.4 0 0 0 1 camera_link hokuyo_frame 10" />
+  <node pkg="leg_detector" type="leg_detector" name="leg_detector" args="scan:=base_scan $(find leg_detector)/config/trained_leg_detector.yaml" output="screen"/>
+
+  <!--node name="hokuyo" pkg="hokuyo_node" type="hokuyo_node" respawn="false" output="screen">
+  
+    <!-- Starts up faster, but timestamps will be inaccurate. --> 
+    <param name="calibrate_time" type="bool" value="false"/> 
+    
+    <!-- Set the port to connect to here -->
+    <param name="frame_id" value="/hokuyo_frame"/>
+    <param name="port" type="string" value="/dev/ttyACM0"/> 
+    <param name="min_ang" type="double" value="-3"/>
+    <param name="max_ang" type="double" value="3"/>
+    <param name="intensity" type="bool" value="false"/>
+  </node>
+
+
+</launch>
+

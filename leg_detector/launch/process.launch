@@ -1,0 +1,5 @@
+<launch>
+  <!--node pkg="tf" type="static_transform_publisher" name="camera_link" args="0 0 -0.4 0 0 0 1 camera_link hokuyo_frame 10" /-->
+  <node pkg="leg_detector" type="leg_detector" name="leg_detector" args="scan:=base_scan $(find leg_detector)/config/trained_leg_detector.yaml" output="screen"/>
+</launch>
+

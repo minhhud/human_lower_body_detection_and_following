@@ -1,0 +1,26 @@
+<launch>
+
+  <master auto="start"/>
+  <!--Include official launch file and specify camera_info urls -->
+  <include file="$(find openni_launch)/launch/openni.launch">
+       <!-- provide arguments to that launch file -->
+  </include>
+
+  <!--node name="devicenode" pkg="devicenode" type="devicenode" output="screen"/-->
+
+  <include file="$(find depthimage_to_laserscan)/launch/depth_to_laser.launch">
+  </include>
+
+  <!--node pkg="hokuyo_node" type="hokuyo_node" name="hokuyo_node" /-->
+
+  <!--node pkg="tf" type="static_transform_publisher" name="basetolaser" args="0.20 0 0.20 0 0 0 base_link laser 100"/-->
+  <!--node pkg="tf" type="static_transform_publisher" name="basetocamera" args="0.60 0 0 0 0 0 base_link camera_link 100"/-->
+
+
+  <include file="$(find leg_detector)/launch/process.launch">
+  </include>
+
+  <include file="$(find leg_follow)/robot.launch">
+  </include>
+
+</launch>

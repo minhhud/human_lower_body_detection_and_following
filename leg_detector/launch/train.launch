@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="leg_detector" type="leg_detector" name="leg_detector" args="train" output="screen"/>
+</launch>
+
