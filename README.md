@@ -1,5 +1,5 @@
 # human_low_body_detection_and_following
-We propose a robust method for human leg detection and tracking by using low-cost RGB-D camera. Two issuses are mainly takled:
+We propose a robust method for human leg detection, tracking and following by using low-cost RGB-D camera. Two issuses are mainly takled:
 + Exploit three-dimensional characteristics and RGB features of low-body part to overcome the malfunction in distinguishing human legs and similar types of shape (table legs, pillars, etc.) 
 + Reliable mechanism to track the target leg while multi-legs are detected simultaneously in complex environment.
 
