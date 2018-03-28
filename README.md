@@ -4,11 +4,11 @@ We propose a robust method for human leg detection and tracking by using low-cos
 + Reliable mechanism to track the target leg while multi-legs are detected simultaneously in complex environment.
 
 A. Leg Detector: 
-Flow-chart of leg detector (Figure 1) describes 4 modules:
-+ Retrieving leg model (i)
-+ Pairing of legs (ii)
-+ Masking with low-body part (iii)
-+ Applying Support Vector Machine (SVM) classifier with Histogram Oriented Gradient (iv)
+Leg detector includes 4 modules:
++ Retrieving leg model 
++ Pairing of legs 
++ Masking with low-body part
++ Applying Support Vector Machine (SVM) classifier with Histogram Oriented Gradient 
 
 B. Leg follow:
 + After detection, the low-body part is tracked using a Kalman filter.
