@@ -8,7 +8,7 @@ Leg detector includes 4 modules:
 + Retrieving leg model 
 + Pairing of legs 
 + Masking with low-body part
-+ Applying Support Vector Machine (SVM) classifier with Histogram Oriented Gradient 
++ Applying Support Vector Machine (SVM) classifier with Histogram Oriented Gradient of low-body part
 
 B. Leg follow:
 + After detection, the low-body part is tracked using a Kalman filter.
