@@ -12,4 +12,4 @@ Leg detector includes 4 modules:
 
 B. Leg follow:
 + After detection, the low-body part is tracked using a Kalman filter.
-+ A combination of similarity of distance between the center point of detected lower body part and Kinect (sim_dist), and the Color Histogram of leg region (sim_color) are calculated and added up together. 
+
