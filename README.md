@@ -13,3 +13,5 @@ Leg detector includes 4 modules:
 B. Leg follow:
 + After detection, the low-body part is tracked using a Kalman filter.
 
+C. Database: 
+Our own training data is quite heavily so we are not upload to github. 
